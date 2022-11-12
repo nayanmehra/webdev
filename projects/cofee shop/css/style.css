@@ -1,0 +1,145 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.menubutton{
+    float: right;
+    position: relative;
+    top: -58px;
+    right: 30px;
+    display: none;
+}
+.banner{
+    width: 100%;
+   
+    text-align: center;
+    background-image: url(../images/piccover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+    margin-top: -50px;
+}
+.banner h6{
+    padding-top: 200px;
+}
+.banner button{
+    padding: 15px;
+    color: #000;
+    font-size: 10px ;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 300px;
+}
+h6{
+    margin-top: 50px;
+}
+.cont1{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.cont1 .two{
+    width: 47%;
+    
+}
+
+
+.cont1 .two img{
+    width:100% ;
+    height: 550px;
+}
+.cont1 .two button{
+    position: relative;
+    top: -50px;
+    opacity: 0;
+}
+.cont1 .two button:hover{
+    opacity: 1;
+
+}
+.cont2 .nine{
+   width: 30%;
+   margin: 15px;
+    float: left;
+    
+}
+
+.cont2 .nine img{
+    width:100% ;
+    height: 550px;
+}
+.cont2 .nine button{
+    position: relative;
+    top: -50px;
+    opacity: 0;
+}
+.cont2 .nine button:hover{
+    opacity: 1;
+
+}
+.imagei{
+    width: 45%;
+    float: left;
+}
+.bigimage{
+    width: 60%;
+    height: 300px;
+    float: left;
+}
+.smallimage{
+    width: 35%;
+    height: 300px;
+    float: left;
+}
+.bigimage img{
+    width: 100%;
+    height: 100%;
+}
+.smallimage img{
+    width: 100%;
+    height: 46%;
+    margin-left: 25px;
+    
+}
+.secondimg{
+    margin-top: 24px ;
+}
+.textdiv{
+    width: 47%;
+    float: right;
+    text-align: left;
+}
+.blank{
+    width: 100%;
+    height: 300px;
+    background-image: url(../images/pic05.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+.container .three{
+    width: 30%;
+    float: left;
+    text-align: left;
+    
+}
+.container .bitween{
+    margin: 0px 45px;
+}
+.container .three img{
+    width: 100%;
+    height: 300px;
+}
+.container .uper{
+    width: 100%;
+    background-color: #1d1f2e;;
+}
+@media only screen and (max-width:770px){
+    .menubutton{
+        display: block;
+    }
+}
