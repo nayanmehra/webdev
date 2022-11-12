@@ -1,0 +1,242 @@
+body{
+   margin: 0;
+}
+.clearfix::after{
+   
+    content: "-";
+    display: block;
+    clear: both;
+}
+.main{
+    height: 100%;
+    background-color: red;
+    padding: 0;
+}
+.navigation{
+    width: 5%;
+    height: 680px;
+    /* background:  linear-gradient( #14ffe9, #ffeb3b, #ff00e0); */
+    float: left;
+    background-color: red;
+    
+    
+}
+#smallbtn1 #smallbtn::before{
+    color: #fff;
+    background-color: black;
+    display: block;
+}
+.home{
+    padding-top: 60px;
+}
+.home p{
+    transform:rotate(-90deg);
+    line-height: 50px;
+}
+p a{
+    letter-spacing: 2px;
+    font-weight: 600;
+    color:  black;
+}
+
+
+/*  */
+ .text h1{
+    font-size: 45px;
+    font-weight: 600;
+    color: grey;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+
+ }
+ .text span{
+    color: #fff;
+    -webkit-text-fill-color: #fff;
+    font-size:50px ;
+    margin: 100px 0px ;
+ }
+.text p {
+    margin-top: 60px;
+}
+
+
+/*  */
+.black{
+    width: 50%;
+    height: 680px;
+    float: left;
+    background-color: black;
+}
+.text{
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.text span{
+    color: #fff;
+}
+.text p {
+    color: #fff;
+} 
+
+.reach-button {
+    margin: 50px 0 0 40px;
+    background-color: red;
+    border-radius: 0;
+}
+.imgrgb{
+    width: 20% ;
+    height: 266px ;
+    float: right;
+    margin: 300px 120px 0 0 ;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    justify-content: center;
+     overflow: hidden; 
+     z-index: 1;
+
+}
+.imgrgb::before{
+    content: '';
+    width: 20%;
+    z-index: -1;
+    position: absolute;
+    inset: -10px 94px;
+    background: linear-gradient(315deg,red,rgb(84, 255, 84),blue);
+    transition: 0.5s;
+    animation: animate 2s linear infinite;
+    
+}
+ .imgrgb:hover::before{
+    width: 139%;
+   
+    inset: -20px -60px;
+   
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.imgrgb::after{
+    content: '';
+    position: absolute;
+    inset: 6px ;
+    background: transparent;
+    border-radius: 50%;
+    z-index: 1;
+}
+.icondiv{
+    width: 95%;
+    height:255px;
+    margin: 5px;
+    border-radius: 50%;
+    
+    z-index: 2;
+}
+.iconimg{
+   width: 100%;
+   height: 100%; 
+   margin: 0;
+   padding: 0;
+   border: 1px solid black;
+   border-radius: 50%;
+} 
+.reach-button a{
+    color: black;
+}
+.secondbtn a{
+    color: red;
+}
+.buttondiv{
+    width: 107px;
+    height: 32px;
+    float: right;
+    margin:  3% 17% 0px 0px ;
+   
+
+}
+.secondbtn{
+   
+    background-color: black;
+    border-radius: 0;
+    border: 0;
+    float: right;
+   
+    display: block;
+    
+}
+@media only screen and (max-width:850px){
+    .black{
+        width: 95%;
+        text-align: center;
+    }
+    .imgrgb{
+        margin: 50px auto;
+        position: relative;
+        top: 100px;
+        float: none;
+        clear: both;
+        
+    }
+    .buttondiv{
+        margin: 112px auto;
+        float: none;
+    }
+}
+@media only screen and (max-width:770px){
+    .black{
+        width: 95%;
+        margin: 0 auto;
+        float: none;
+
+    }
+    .imgrgb{
+        width: 25%;
+    }
+   
+}
+
+@media only screen and (max-width:600px){
+    .black{
+        width: 94%;
+        margin: 0 auto;
+        float: none;
+    }
+    .imgrgb{
+        width: 40%;
+
+    }
+   
+}
+@media only screen and (max-width:550px){
+    .black{
+        width: 90%;
+    }
+    .imgrgb{
+        width: 50%;
+
+    }
+    .text h1{
+        font-size: 35px;
+    }
+    .text h1 span{
+        font-size: 35px;
+    }
+    
+}
+@media only screen and (max-width:350px){
+    .black{
+        height: 750px;
+    }
+}
+    
+   /* *{
+    border: 1px solid greenyellow;
+   } */
+    
